@@ -5,6 +5,7 @@ metadata:
   name: ingress-nginx
   namespace: flux-system
 spec:
+  releaseName: ingress-nginx
   chart:
     spec:
       chart: ingress-nginx
@@ -19,7 +20,6 @@ spec:
   targetNamespace: ingress-nginx
   values:
     # Flux will prefix the chart name with "flux-system-" otherwise
-    nameOverride: ingress-nginx
     controller:
       hostPort:
         enabled: true
