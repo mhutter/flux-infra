@@ -19,7 +19,6 @@ spec:
   interval: 24h
   targetNamespace: ingress-nginx
   values:
-    # Flux will prefix the chart name with "flux-system-" otherwise
     controller:
       hostPort:
         enabled: true
